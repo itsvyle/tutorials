@@ -11,4 +11,4 @@
 2. **Browse a repository -> Github -> Select the name of your newly created repo**
 ![image](https://user-images.githubusercontent.com/65409906/173238731-9acb8c37-b78d-4c60-a3f9-9c83427c3966.png)
 
-3. **Set Local Path to C:\Repos\<your project name>**
+3. **Set Local Path to C:\Repos\\<your project name>**
