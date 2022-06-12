@@ -33,3 +33,11 @@ If done correctly, it should look something like this:
 
 * Click on add for both of the files. The result should look something like this:
 ![image](https://user-images.githubusercontent.com/65409906/173239409-c3e6f441-ec57-4a8f-9477-33c802d90e39.png)
+
+2. ### Push the files to github
+* Go back to the `Home` of the Team Explorer
+* Go in `Changes`
+* Enter the commit message: **Initial commit**
+* Click on the arrow next to the `Commit staged` Button, and do `Commit and Push`:
+![image](https://user-images.githubusercontent.com/65409906/173239523-2d2c31ca-1a17-43c2-8b98-51214f67f248.png)
+
