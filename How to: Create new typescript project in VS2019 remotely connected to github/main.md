@@ -45,3 +45,4 @@ If done correctly, it should look something like this:
 
 1. ### Add a `tsconfig.json` file:
 * Go in `Solution Explorer -> Right Click the current repo -> Add -> New File` and set the file name to `tsconfig.json`
+* Paste the contents of [base tsconfig.json](How to: Create new typescript project in VS2019 remotely connected to github/tsconfig.json)
