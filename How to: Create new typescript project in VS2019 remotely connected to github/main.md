@@ -41,3 +41,7 @@ If done correctly, it should look something like this:
 * Click on the arrow next to the `Commit staged` Button, and do `Commit and Push`:
 ![image](https://user-images.githubusercontent.com/65409906/173239523-2d2c31ca-1a17-43c2-8b98-51214f67f248.png)
 
+## Step 3: Prepare project for typescript coding:
+
+1. ### Add a `tsconfig.json` file:
+* Go in `Solution Explorer -> Right Click the current repo -> Add -> New File` and set the file name to `tsconfig.json`
