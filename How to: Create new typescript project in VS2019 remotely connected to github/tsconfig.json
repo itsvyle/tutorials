@@ -1,0 +1,35 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    //Target
+    "target": "ES5",
+    "module": "None",
+    "lib": [
+      "ES5",
+      "DOM",
+      "ES2016.array.include",
+      "ES2019.string",
+      "ES2019.array",
+      "ES2019.object"
+    ],
+
+    //Generation:
+    "sourceMap": true,
+    "declaration": false,
+    //"declarationDir": "declarations",
+    "removeComments": true,
+    
+
+    //Type checking:
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "checkJs": false,
+    "noEmitOnError": true
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
