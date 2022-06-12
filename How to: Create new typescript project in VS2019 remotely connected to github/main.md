@@ -3,7 +3,7 @@
 ## Requirements:
 * Visual studio 2019
 * The `Github Extension for Visual Studio`, which can be installed via the `Visual Studio installer` or later, by going to **Extensions -> Manage Extensions -> Online -> Searching for 'Github Extension for Visual Studio'**
-* The `Typescript SDK` for visual studio. 
+* The `Typescript SDK` for visual studio. If installed, the files should be found at: `C:\Program Files (x86)\Microsoft SDKs\TypeScript`
 
 ## Step 1: Create repo on github
 **Note**: No `.gitignore` template required, however it's better to require the creation of a `README.md`
