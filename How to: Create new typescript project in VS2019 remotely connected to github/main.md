@@ -47,3 +47,6 @@ If done correctly, it should look something like this:
 * Go in `Solution Explorer -> Right Click the current repo -> Add -> New File` and set the file name to `tsconfig.json`
 * Paste the contents of [base tsconfig.json](tsconfig.json)
 * Once this is done, push the files again: `Team Explorer -> Home -> Changes -> Commit message =  'Added tsconfig.json' -> Arrow next to commit all -> Commit all and push`
+
+## At the end, your github repo should look like this:
+![image](https://user-images.githubusercontent.com/65409906/173240891-dd5b037e-4f92-4a1e-8629-58d0514c7fb4.png)
