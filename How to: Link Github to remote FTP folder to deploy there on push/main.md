@@ -72,6 +72,10 @@ jobs:
           ./cgi-bin/**
           ./requetes/**
 ```
+* If you don't want to upload typescript files (`.ts` files), add this to the `exclude` property, being careful that they are indented the same as the other lines of `exclude`:
+```yml
+          **/**.ts
+```
 
 ## Step 5: Upload the current data on the website
 * Using filezilla, download the following content of the ftp server contents to the LOCAL repository
