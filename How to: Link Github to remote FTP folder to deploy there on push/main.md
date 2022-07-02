@@ -16,3 +16,38 @@ If the project is going to use typescript, then create the `tsconfig.json` file.
 * Click on `Set up a workflow yourself`
 * Check that the file position is `PROJECT_NAME/.github/workflows/main.yml`
 ![image](https://user-images.githubusercontent.com/65409906/177016548-09affcb2-4623-48c2-894c-623aa1288eb3.png)
+* Paste in the following content:
+```yml
+# Documentation here: https://github.com/marketplace/actions/ftp-deploy?version=4.3.0
+name: 🚀 Deploy website on push
+on:
+  push:
+    branches: ["main"]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  web-deploy:
+    name: 🎉 Deploy via FTP
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: 21
+        # Defines whether or not actual changes will be made | dry-run: true means that no changes will be made
+        dry-run: false
+        server-dir: "./"
+        # Must always be false:
+        dangerous-clean-slate: false
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          README.md
+```
