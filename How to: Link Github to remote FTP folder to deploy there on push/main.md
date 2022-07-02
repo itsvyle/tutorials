@@ -10,7 +10,14 @@ Create a `README.md` file at the start, as it will be anoying to manually add fi
 Follow the instructions [here](/How%20to:%20Create%20new%20typescript%20project%20in%20VS2019%20remotely%20connected%20to%20github/main.md#how-to-create-new-typescript-project-in-vs2019-remotely-connected-to-github)
 If the project is going to use typescript, then create the `tsconfig.json` file. Note you must then restart visual studio for the `tsconfig.json` to take effect
 
-## Step 3: Setup action in the repository
+## Step 3: Setup Secrets in the repository
+* Navigate to the `Settings` tab of the repo, and go the `Secrets->Actions`
+* Add the 3 following secrets:
+  * `FTP_SERVER`: the FTP uri of the remote server
+  * `FTP_USERNAME`: the username with which you log in to the ftp server
+  * `FTP_PASSWORD`: the password with which you log in to the ftp server
+
+## Step 4: Setup action in the repository
 * Go in the `Actions` tab of the repo:
 ![image](https://user-images.githubusercontent.com/65409906/177016515-a2308702-e11d-491f-b019-3767256cab37.png)
 * Click on `Set up a workflow yourself`
