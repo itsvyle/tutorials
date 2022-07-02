@@ -46,6 +46,7 @@ If done correctly, it should look something like this:
 1. ### Add a `tsconfig.json` file:
 * Go in `Solution Explorer -> Right Click the current repo -> Add -> New File` and set the file name to `tsconfig.json`
 * Paste the contents of [base tsconfig.json](tsconfig.json)
+* Restart the instance of Visual Studio
 * Once this is done, push the files again: `Team Explorer -> Home -> Changes -> Commit message =  'Added tsconfig.json' -> Arrow next to commit all -> Commit all and push`
 
 ## At the end, your github repo should look like this:
