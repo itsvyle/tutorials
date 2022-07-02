@@ -51,3 +51,12 @@ jobs:
           **/node_modules/**
           README.md
 ```
+* If the remote ftp is the source of a french OVH website, add the following lines to the `exclude` property, being careful that they are indented the same as the other lines of `exclude`:
+```yml
+          .forward
+          .htaccess
+          LISEZ-MOI
+          ./sessions/**
+          ./cgi-bin/**
+          ./requetes/**
+```
