@@ -81,3 +81,13 @@ jobs:
 
 ## Seeing upload/actions logs
 By going in the `Actions` tab of the repo, you should be able to see all the logs from the previous synchronisations
+
+## Run upload manually or disable auto-upload
+Go in the `Actions` tab of your repo
+In the `Workflows` left panel, select the `🚀 Deploy website on push` workflow
+
+**To run, just click on the `Run Workflow` button**:
+![image](https://user-images.githubusercontent.com/65409906/177017352-b1611f1d-bedd-4c6e-82c6-46f8047bb037.png)
+
+**To disable auto-upload, click on the three dots then on `Disable Workflow`**:
+![image](https://user-images.githubusercontent.com/65409906/177017363-3c2c3674-49db-4333-ae58-86e2f01bf893.png)
