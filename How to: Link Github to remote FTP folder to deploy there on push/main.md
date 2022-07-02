@@ -101,3 +101,6 @@ In the `Workflows` left panel, select the `🚀 Deploy website on push` workflow
 
 **To disable auto-upload, click on the three dots then on `Disable Workflow`**:
 ![image](https://user-images.githubusercontent.com/65409906/177017363-3c2c3674-49db-4333-ae58-86e2f01bf893.png)
+
+## Synchronise repository with ftp
+Use filezilla to download all changes to the LOCAL REPOSITORY then push changes to github
