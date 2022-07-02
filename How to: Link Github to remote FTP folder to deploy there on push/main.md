@@ -104,3 +104,6 @@ In the `Workflows` left panel, select the `🚀 Deploy website on push` workflow
 
 ## Synchronise repository with ftp
 Use filezilla to download all changes to the LOCAL REPOSITORY then push changes to github
+
+**Note**: PHP file should have CRLF as line endings
+The visual studio 2019 regexp to delete all single lines is: `^(?([^\r\n])\s)*\r?$\r?\n` (can be used in Ctrl+H)
