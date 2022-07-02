@@ -16,8 +16,13 @@ If the project is going to use typescript, then create the `tsconfig.json` file.
   * `FTP_SERVER`: the FTP uri of the remote server
   * `FTP_USERNAME`: the username with which you log in to the ftp server
   * `FTP_PASSWORD`: the password with which you log in to the ftp server
+  * `FTP_UPLOAD_LOG_LEVEL`: the level of logging of the uploader. One of: 
+   * `minimal`: only important info
+   * `standard`: important info and basic file changes
+   * `verbose`: print everything the script is doing
 It should look like this:
-![image](https://user-images.githubusercontent.com/65409906/177016691-e54f2054-c9c1-4702-9c6f-a0b0ee28eeb5.png)
+![image](https://user-images.githubusercontent.com/65409906/177017532-fed61ad5-e436-4c69-958a-e4ab30bd5e45.png)
+
 
 
 ## Step 4: Setup action in the repository
@@ -54,7 +59,7 @@ jobs:
         dry-run: false
         server-dir: "./"
         # minimal: only important info | standard: important info and basic file changes | verbose: print everything the script is doing
-        log-level: "minimal"
+        log-level: ${{ secrets.FTP_UPLOAD_LOG_LEVEL }}
         # Must always be false:
         dangerous-clean-slate: false
         exclude: |
