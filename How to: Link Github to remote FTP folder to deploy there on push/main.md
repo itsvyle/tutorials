@@ -16,6 +16,9 @@ If the project is going to use typescript, then create the `tsconfig.json` file.
   * `FTP_SERVER`: the FTP uri of the remote server
   * `FTP_USERNAME`: the username with which you log in to the ftp server
   * `FTP_PASSWORD`: the password with which you log in to the ftp server
+It should look like this:
+![image](https://user-images.githubusercontent.com/65409906/177016691-e54f2054-c9c1-4702-9c6f-a0b0ee28eeb5.png)
+
 
 ## Step 4: Setup action in the repository
 * Go in the `Actions` tab of the repo:
@@ -67,3 +70,12 @@ jobs:
           ./cgi-bin/**
           ./requetes/**
 ```
+
+## Step 5: Upload the current data on the website
+* Using filezilla, download the following content of the ftp server contents to the LOCAL repository
+ * If this is an OVH website, only download the `www` folder and the `.ovhconfig` file
+* Pull data from the github repository
+* Push all changes to the repo
+
+## Seeing upload/actions logs
+By going in the `Actions` tab of the repo, you should be able to see all the logs from the previous synchronisations
