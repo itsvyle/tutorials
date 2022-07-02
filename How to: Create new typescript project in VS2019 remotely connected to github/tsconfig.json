@@ -12,24 +12,29 @@
       "ES2019.array",
       "ES2019.object"
     ],
+    "moduleResolution": "node",
+    "types": [ "@types/*" ],
 
     //Generation:
     "sourceMap": true,
     "declaration": false,
     //"declarationDir": "declarations",
     "removeComments": true,
-    
+
 
     //Type checking:
     "strict": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "checkJs": false,
-    "noEmitOnError": true
+    // "moduleDetection": "force",
+    "noEmitOnError": false
   },
   "exclude": [
     "node_modules",
-    "wwwroot"
+    "wwwroot",
+    ".vs",
+    ".git"
   ]
 }
