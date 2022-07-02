@@ -53,6 +53,8 @@ jobs:
         # Defines whether or not actual changes will be made | dry-run: true means that no changes will be made
         dry-run: false
         server-dir: "./"
+        # minimal: only important info | standard: important info and basic file changes | verbose: print everything the script is doing
+        log-level: "minimal"
         # Must always be false:
         dangerous-clean-slate: false
         exclude: |
