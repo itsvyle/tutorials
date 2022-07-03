@@ -84,7 +84,7 @@ jobs:
 
 ## Step 5: Upload the current data on the website
 * Using filezilla, download the following content of the ftp server contents to the LOCAL repository
- * If this is an OVH website, only download the `www` folder and the `.ovhconfig` file
+ * If this is an OVH website, only download the `www` folder and the `.ovhconfig` file as well as the `.htaccess` file
 * Pull data from the github repository
 * Push all changes to the repo
 
